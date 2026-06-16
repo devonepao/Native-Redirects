@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telegram Proxy Launcher</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f5f7fb;
+        --card: #ffffff;
+        --text: #1a1f36;
+        --muted: #4f5b7a;
+        --primary: #1f9eff;
+        --primary-hover: #127fd6;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f172a;
+          --card: #111827;
+          --text: #e5e7eb;
+          --muted: #9ca3af;
+          --primary: #38bdf8;
+          --primary-hover: #0ea5e9;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.5;
+      }
+
+      .container {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 1rem;
+      }
+
+      .card {
+        width: min(100%, 720px);
+        background: var(--card);
+        border-radius: 12px;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+        padding: 1.25rem;
+      }
+
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(1.4rem, 2.2vw, 2rem);
+      }
+
+      p {
+        margin: 0.25rem 0 1rem;
+        color: var(--muted);
+      }
+
+      .actions {
+        display: grid;
+        gap: 0.75rem;
+        margin: 1rem 0 1.25rem;
+      }
+
+      .button {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        background: var(--primary);
+        color: #fff;
+        padding: 0.85rem 1rem;
+        border-radius: 10px;
+        font-weight: 700;
+      }
+
+      .button:hover,
+      .button:focus-visible {
+        background: var(--primary-hover);
+      }
+
+      .secondary {
+        background: transparent;
+        color: var(--primary);
+        border: 2px solid var(--primary);
+      }
+
+      .secondary:hover,
+      .secondary:focus-visible {
+        color: #fff;
+      }
+
+      code,
+      .url {
+        display: block;
+        white-space: pre-wrap;
+        word-break: break-word;
+        background: rgba(127, 127, 127, 0.12);
+        padding: 0.75rem;
+        border-radius: 8px;
+        font-size: 0.9rem;
+      }
+
+      ol {
+        margin-top: 0.5rem;
+        padding-left: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>Telegram Proxy Launcher</h1>
+        <p>Use the buttons below to open Telegram proxy settings on mobile or desktop.</p>
+
+        <div class="actions">
+          <a class="button" href="tg://proxy?server=35.222.143.232&port=443&secret=ecddc51d19ca88431fab6cf4dd81bcdd">
+            Launch Telegram (tg://)
+          </a>
+          <a class="button secondary" href="https://t.me/proxy?server=35.222.143.232&port=443&secret=ecddc51d19ca88431fab6cf4dd81bcdd" target="_blank" rel="noopener noreferrer">
+            Open Telegram Proxy Link (https://)
+          </a>
+        </div>
+
+        <h2>Proxy URL</h2>
+        <div class="url">https://t.me/proxy?server=35.222.143.232&port=443&secret=ecddc51d19ca88431fab6cf4dd81bcdd</div>
+
+        <h2>Setup Steps</h2>
+        <ol>
+          <li>Tap <strong>Launch Telegram (tg://)</strong> first.</li>
+          <li>If Telegram does not open, tap <strong>Open Telegram Proxy Link (https://)</strong>.</li>
+          <li>In Telegram, confirm and enable the proxy settings when prompted.</li>
+          <li>Check Telegram connection status to verify the proxy is active.</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+  </html>
