@@ -85,17 +85,6 @@
         background: var(--primary-hover);
       }
 
-      .secondary {
-        background: transparent;
-        color: var(--primary);
-        border: 2px solid var(--primary);
-      }
-
-      .secondary:hover,
-      .secondary:focus-visible {
-        color: #fff;
-      }
-
       code,
       .url {
         display: block;
@@ -117,14 +106,11 @@
     <main class="container">
       <section class="card">
         <h1>Telegram Proxy Launcher</h1>
-        <p>Use the buttons below to open Telegram proxy settings on mobile or desktop.</p>
+        <p>Use the button below to open Telegram proxy settings on mobile or desktop.</p>
 
         <div class="actions">
           <a class="button" href="tg://proxy?server=35.222.143.232&port=443&secret=ecddc51d19ca88431fab6cf4dd81bcdd">
             Launch Telegram (tg://)
-          </a>
-          <a class="button secondary" href="https://t.me/proxy?server=35.222.143.232&port=443&secret=ecddc51d19ca88431fab6cf4dd81bcdd" target="_blank" rel="noopener noreferrer">
-            Open Telegram Proxy Link (https://)
           </a>
         </div>
 
@@ -133,8 +119,7 @@
 
         <h2>Setup Steps</h2>
         <ol>
-          <li>Tap <strong>Launch Telegram (tg://)</strong> first.</li>
-          <li>If Telegram does not open, tap <strong>Open Telegram Proxy Link (https://)</strong>.</li>
+          <li>Tap <strong>Launch Telegram (tg://)</strong>.</li>
           <li>In Telegram, confirm and enable the proxy settings when prompted.</li>
           <li>Check Telegram connection status to verify the proxy is active.</li>
         </ol>
